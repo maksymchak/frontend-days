@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url('../fonts/GothamRoundedMediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url('../fonts/GothamRoundedBook.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url('../fonts/GothamRoundedMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*...Global styles...*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #8c9398;
+  background-color: #ffffff;      
+}
+
+h1, h2, h3 {
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #242830; 
+}
+
+a {
+  text-decoration: none;
+}
+
+/*...Header...*/
+.main-navigation {
+  background-color: #292C33;
+  color: #A6A7AA;  
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #A6A7AA;
+  transition: all 0.5s ease;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #ffffff;
+}
+
+.header-caption {
+  background: url(../img/header-bg.jpg) no-repeat center;
+  background-size: cover; 
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: 300;
+}
+
+.header-caption h1 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 12px;
+  font-weight: inherit;
+}
+
+.header-caption span {
+  color: #a1a9b0;
+}
+
+.header-caption p {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.article-btn {
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #3dc9b3;
+  border-radius: 5px;
+}
+
+.article-btn:hover,
+.article-btn:focus {
+  background: rgba(61, 201, 179, 0.6);
+  color: #ffffff;
+}
+
+/*...main...*/
+.intro {
+  background: #f3f5f8;
+  text-align: center;
+}
+
+.intro a {
+  color: #353535;
+}
+
+.intro a:hover,
+.intro a:focus {
+  color: #3dc9b3;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.design-item {
+  width: 50%;
+  background: #f3f5f8;
+  height: 100%;
+}
+
+.iphone {
+  background: url('../img/iphone.png') no-repeat center;
+}
+
+.quote {
+  background: url('../img/plants-bg.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.quote p {
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.quote p span {
+  font-size: 25px;
+}
+
+.scroll-down {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: rgba(61, 201, 179, 0.8);
+}
+
+.scroll-down:hover,
+.scroll-down:focus {
+  background: rgba(61, 201, 179, 1);
+  color: #ffffff;
+}
+
+/*...Portfolio...*/
+/*Add overlay*/
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+/*...Ignite...*/
+.ignite {
+  background-color: #242830;
+}
+
+.ignite-btn {
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  transition: all 0.5s ease;
+}
+
+.ignite-btn:hover,
+.ignite-btn:focus {
+  color: #3dc9b3;
+  border: solid 1px #3dc9b3;
+}
+
+/*...Team...*/
+.team-list {
+  list-style: none;
+}
+
+.team-item {
+  text-align: center;
+}
+
+.team-list .social-button {
+  list-style: none;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #242830; 
+  color: #ffffff;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background: #3dc9b3;
+  color: #ffffff;
+}
+
+/*...Subscription...*/
+.subscription {
+  background: url('../img/keyboard-bg.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.subscription h2 {
+  color: #ffffff;
+}
+
+.subscription input[type=text] {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px #ffffff; 
+  color: #ffffff;
+}
+
+.subscription button {
+  background: rgba(61, 201, 179, 0.5); 
+  border: solid 1px rgba(61, 201, 179, 0.5); 
+  color: #ffffff;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  transition: all 0.5s ease; 
+}
+
+.subscription button:hover,
+.subscription button:focus {
+  background: rgba(61, 201, 179, 1); 
+  border: solid 1px rgba(61, 201, 179, 1);  
+  color: #ffffff;
+}
+
+/*...Contacts...*/
+.contacts {
+  background: #f3f5f8;
+}
+.scroll-up {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  background: rgba(61, 201, 179, 0.5); 
+  color: #ffffff;
+}
+
+.scroll-up:hover,
+.scroll-up:focus {
+  background: rgba(61, 201, 179, 1);
+  color: #ffffff;
+}
+
+.contacts-item {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 0px 0px #f0f2f4;
+}
+
+.contacts-item:hover, 
+.contacts-item:focus { 
+  box-shadow: 0px 3px 0px 0px #3dc9b3; 
+}
+
+.contacts-item h3 {
+  color: #3dc9b3; 
+}
+
+/*...Footer...*/
+footer {
+  background-color: #242830;
+}
+
+footer a {
+  color: #a1a9b0; 
+}
+
+footer p {
+  color: #ffffff;
+}
+
+ul.footer-list {
+  list-style: none;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+ul.footer-list li::after {
+  content: " |";
+}
+
+ul.footer-list li:last-child::after {
+  content: "";
+}
