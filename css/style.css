@@ -1,5 +1,12 @@
 @font-face {
   font-family: "Gotham Rounded";
+  src: url('../fonts/GothamRoundedMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
   src: url('../fonts/GothamRoundedMediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
@@ -12,50 +19,83 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url('../fonts/GothamRoundedMedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-/*...Global styles...*/
+/*..........Global styles..........*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 25px;
   font-weight: 500;
   color: #8c9398;
   background-color: #ffffff;      
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3 {
   font-family: "Gotham Rounded", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  line-height: 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #242830; 
+  color: #353535; 
 }
 
 a {
   text-decoration: none;
 }
 
-/*...Header...*/
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*..........Header..........*/
 .main-navigation {
-  background-color: #292C33;
   color: #A6A7AA;  
+  background-color: #242830;
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+
   list-style: none;
 }
 
+.site-navigation li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2); 
+}
+
+.site-navigation li:last-child {
+  border: none;
+}
+
 .site-navigation a {
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+
   color: #A6A7AA;
   transition: all 0.5s ease;
 }
@@ -72,31 +112,34 @@ a {
   font-weight: 300;
 }
 
+.header-caption .container {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 0 300px 0;
+}
+
 .header-caption h1 {
   font-size: 40px;
   line-height: 44px;
   letter-spacing: 12px;
   font-weight: inherit;
+  margin: 0;
 }
 
-.header-caption span {
+.header-caption h1 span {
   color: #a1a9b0;
 }
 
 .header-caption p {
   font-size: 15px;
-  line-height: 25px;
   letter-spacing: 1px;
 }
 
 .article-btn {
   font-family: "Gotham Rounded", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #3dc9b3;
   border-radius: 5px;
@@ -108,10 +151,24 @@ a {
   color: #ffffff;
 }
 
-/*...main...*/
+/*..........Intro..........*/
 .intro {
-  background: #f3f5f8;
+  background-color: #f3f5f8;
+}
+
+.intro .container {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 100px 165px;
+}
+
+.container .intro-row {
+  width: 750px;
+}
+
+.intro h2 {
+  margin: 0;
 }
 
 .intro a {
@@ -123,28 +180,69 @@ a {
   color: #3dc9b3;
 }
 
+/*..........Features..........*/
+.features .container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.features h2 {
+  margin: 0;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .feature-item {
+  width: 360px;
+}
+
+/*..........Design..........*/
+.design {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .design-item {
-  width: 50%;
-  background: #f3f5f8;
-  height: 100%;
+  width: 815px
 }
 
-.iphone {
-  background: url('../img/iphone.png') no-repeat center;
+.design .iphone {
+  background: url('../img/iphone.jpg') no-repeat center;
+  background-size: cover; 
+  box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
 }
 
+.design-item .swiper-container {
+  padding: 125px 230px 125px 110px;
+}
+
+.design .swiper-slide {
+  width: 458px;
+}
+
+/*..........Quote..........*/
 .quote {
   background: url('../img/plants-bg.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 50px 0;
+}
+
+.quote .container {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-row {
+  width: 585px;
 }
 
 .quote p {
@@ -154,6 +252,8 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 5px;
+  text-align: center;
+  line-height: 1.1;
 }
 
 .quote p span {
@@ -170,22 +270,38 @@ a {
 .scroll-down:hover,
 .scroll-down:focus {
   background: rgba(61, 201, 179, 1);
-  color: #ffffff;
 }
 
-/*...Portfolio...*/
+/*..........Portfolio..........*/
 /*Add overlay*/
+.portfolio .container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.portfolio h3 {
+  margin: 0;
+}
+
 .portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .portfolio-item {
-  text-align: center;
+  width: 360px;
 }
 
-/*...Ignite...*/
+/*..........Ignite..........*/
 .ignite {
+  display: flex;
+  justify-content: center;
   background-color: #242830;
+  padding: 70px 0;
 }
 
 .ignite-btn {
@@ -202,13 +318,27 @@ a {
   border: solid 1px #3dc9b3;
 }
 
-/*...Team...*/
+/*..........Team..........*/
+.team .container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.team h2 {
+  margin: 0;
+}
+
 .team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .team-item {
-  text-align: center;
+  width: 360px;
 }
 
 .team-list .social-button {
@@ -229,15 +359,35 @@ a {
   color: #ffffff;
 }
 
-/*...Subscription...*/
+/*..........Subscription..........*/
 .subscription {
+  display: flex;
   background: url('../img/keyboard-bg.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+section .subscription-row {
+  margin: auto;
 }
 
 .subscription h2 {
   color: #ffffff;
+  margin: 0;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .subscription input[type=text] {
@@ -262,10 +412,23 @@ a {
   color: #ffffff;
 }
 
-/*...Contacts...*/
+/*..........Contacts..........*/
 .contacts {
   background: #f3f5f8;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
 }
+
+.contacts-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-item {
+  width: 360px;
+}
+
 .scroll-up {
   width: 50px; 
   height: 50px; 
@@ -283,6 +446,7 @@ a {
 .contacts-item {
   background-color: #ffffff;
   box-shadow: 0px 3px 0px 0px #f0f2f4;
+  transition: all 0.5s ease; 
 }
 
 .contacts-item:hover, 
@@ -294,9 +458,27 @@ a {
   color: #3dc9b3; 
 }
 
-/*...Footer...*/
+/*..........Footer..........*/
 footer {
   background-color: #242830;
+  padding: 50px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copyright {
+  width: 580px;
+  margin: 0;
+  text-align: right;
 }
 
 footer a {
@@ -310,7 +492,6 @@ footer p {
 ul.footer-list {
   list-style: none;
   color: #ffffff;
-  line-height: 25px;
 }
 
 ul.footer-list li::after {
