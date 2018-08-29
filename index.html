@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Frontend Days</title>
+  <link href="css/all.min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,18 +14,18 @@
     <nav class="main-navigation">
       <div class="container">
         <ul class="site-navigation">
-          <li><a href="#intro">Introduction</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#responsive">Responsive Design</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Get in Touch</a></li>
+          <li><a href="#intro">Introduction <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+          <li><a href="#features">Features <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+          <li><a href="#responsive">Responsive Design <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+          <li><a href="#portfolio">Portfolio <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+          <li><a href="#team">Team <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+          <li><a href="#contact">Get in Touch <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
         </ul>  
       </div>  
     </nav>
     <section class="header-caption">
       <div class="container">
-        <div class="header-row">
+        <div class="menu-icon">
           <div class="tog" onclick="myFunction(this)">
             <div class="bar1">1</div>
             <div class="bar2"></div>
@@ -44,28 +45,33 @@
     <section class="intro">
       <div class="container">
         <div class="intro-row">
-          <h2>A Creative Portfolio Template</h2>
+          <h2 class="arrow">A Creative Portfolio Template</h2>
           <p>At Webstudio <a href="#">Frontend Days</a> we take a holistic approach to developing your online marketing strategy, which
           includes your website design and marketing of your website to ensure you are discovered by new customers. We provide advice
-          on website strategy and design, content writing and the selection of images that communicate your unique value proposition in
-          a clear and compelling way. We bring together professional user experience design Get in touch today for a free consultation to discuss your project. </p>
+          on website strategy and design. We bring together professional user experience design Get in touch today for a free consultation to discuss your project. </p>
         </div>
       </div>
     </section>
 
     <section class="features">
       <div class="container">
-        <h2>Love what you do, and you'll do it well</h2>
+        <h2 class="arrow">Love what you do, and you'll do it well</h2>
         <ul class="features-list">
           <li class="feature-item">
-            <h3>Digital Design</h3>
+            <div class="feature-icon">
+              <i class="fa fa-laptop shadow"></i>
+            </div>
+            <h3 class="tiny">Digital Design</h3>
             <p>Expand your business through a strong virtual presence, 
             we can develop in various platforms, taking care of your
             resource optimization. Mandatory SEO optimization part of
             our Pre-defined process that make development faster.</p>
           </li>
           <li class="feature-item">
-            <h3>Web Development</h3>
+            <div class="feature-icon">
+              <i class="fa fa-code shadow"></i>
+            </div>
+            <h3 class="tiny">Web Development</h3>
             <p>We listen to your business goals and objectives in 
             order to create a modern, user-friendly website that 
             that helps grow your business. We listen to your 
@@ -73,7 +79,10 @@
             the ground up.</p>
           </li>
           <li class="feature-item">
-            <h3>Creative Direction</h3>
+            <div class="feature-icon">
+              <i class="fa fa-heart shadow"></i>
+            </div>
+            <h3 class="tiny">Creative Direction</h3>
             <p>Our responsive, competent team has years of web
             design and user interface experience. They take the
             time to understand your needs and provide honest
@@ -90,7 +99,7 @@
         <div class="swiper-container design-item">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <h3>Responsive Design Specialists</h3>
+              <h3 class="arrow">Responsive Design Specialists</h3>
               <p>Responsive web design is a relatively new approach to website design
               that ensures users have a good viewing experience no matter what type of 
               device they’re using.</p>
@@ -101,7 +110,7 @@
               mobile by using responsive design. </p>
             </div>
             <div class="swiper-slide">
-              <h3>Mobile solutions</h3>
+              <h3 class="arrow">Mobile solutions</h3>
               <p>Technology is evolving at lightning speed and we all become more dependent
               on them. A quarter of the world's population uses smartphone.</p>
               <p>To be successful a business is more than required every website to have a 
@@ -123,7 +132,7 @@
           <blockquote>
             <p>I got 99 Problems <span>but <em>design</em> 'aint one</span></p>
           </blockquote>
-          <a class="scroll-down" href="#portfolio">scroll</a>
+          <a class="scroll-down" href="#portfolio"><i class="fa fa-chevron-down"></i></a>
         </div>
       </div>  
     </section>
@@ -195,7 +204,7 @@
 
     <section class="team">
       <div class="container">
-        <h2>We're a team that adore what we do</h2>
+        <h2 class="arrow">We're a team that adore what we do</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -298,32 +307,39 @@
 
     <section class="subscription">
         <div class="subscription-row">
+          <i class="fa fa-paper-plane"></i>
           <h2>Subscribe to stay in the loop</h2>
           <form class="appointment-form" action="#" method="post">
-            <p class="appointment-item">
+            <p >
               <label class="visually-hidden" for="subscribe-item">Subscribe</label>
-              <input id="subscribe-item" type="text" name="subscribe">
+              <input id="subscribe-item" type="text" name="subscribe" required>
             </p>
-            <button class="button" type="submit">Send</button>
+            <p class="appointment-item">
+              <label class="visually-hidden" for="subscribe-send">Send</label>
+              <input id="subscribe-send" type="submit" name="" value="Send">
+            </p>
           </form>
         </div>
     </section>
 
     <section class="contacts">
       <div class="container">
-        <h2>Drop us a line</h2>
-        <a class="scroll-up" href="#top">scroll</a>
+        <a class="scroll-up" href="#top"><i class="fa fa-chevron-up"></i></a>
+        <h2 class="arrow">Drop us a line</h2>
         <div class="contacts-row">
             <div class="contacts-item">
-              <h3>Address</h3>
+              <i class="fas fa-map-marker-alt"></i>
+              <h3 class="tiny">Address</h3>
               <p>Bohdana Khmel. St, 17/52, Kyiv</p>
             </div>
             <div class="contacts-item">
-              <h3>Phone</h3>
+              <i class="fas fa-mobile-alt"></i>
+              <h3 class="tiny">Phone</h3>
               <p>+38 093 554 28 **</p>
             </div>
             <div class="contacts-item">
-              <h3>Email</h3>
+              <i class="far fas fa-envelope"></i>
+              <h3 class="tiny">Email</h3>
               <p>maksym4ak@gmail.com</p>
             </div>
         </div> 
@@ -344,7 +360,9 @@
         <li><a href="#">Terms &amp; Conditions</a></li>
         <li><a href="#">Legals</a></li>
       </ul>
-      <p class="footer-copyright">All Rights Reserved. Website created exclusively for <a href="#"><em>Maksymchak</em></a></p>
+      <p class="footer-copyright">
+      All Rights Reserved. Exclusively for <a href="https://www.linkedin.com/in/anton-maksymchak/"><em>Maksymchak</em></a>
+      </p>
     </div>
   </footer>
 
