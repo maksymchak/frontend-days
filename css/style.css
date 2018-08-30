@@ -427,16 +427,28 @@ a {
   width: 360px;
 }
 
-.team-list .social-button {
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 162px;
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #242830; 
   color: #ffffff;
+  font-size: 19px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .social-btn:hover,
@@ -623,3 +635,40 @@ footer a:focus {
   color: #3dc9b3;
 }
 
+/*=========================== Nav Transform ===========================*/
+
+/* Style the collapsible content. 
+   Note: hidden by default */
+.nav-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.tog {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate bars */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+ 
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*===========================  ===========================*/
