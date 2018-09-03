@@ -201,7 +201,6 @@ a {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-/*  padding: 100px 165px;*/
 }
 
 .container .intro-row {
@@ -303,7 +302,7 @@ a {
 
 .pic {
   background: url('../img/iphone-bg.png') no-repeat center center; 
-  background-position: 200px 10px; 
+  background-position: 25px 10px; 
   height: 100%;
   width: 700px; 
 }
@@ -383,7 +382,6 @@ a {
 }
 
 /*..........Portfolio..........*/
-/*Add overlay*/
 .portfolio .container {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -404,10 +402,53 @@ a {
   width: 360px;
 }
 
-.portfolio-item img {
-  margin: 0;
+.portfolio-item .overlay-wrap {
   margin-bottom: 50px;
+}
+
+.overlay-wrap {
+  position: relative;
+  background: rgba(100, 194, 158, 0.8); 
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin: 0;
   padding: 0;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
+}
+
+.middle .fa {
+  font-size: 32px;
+}
+
+.overlay-wrap:hover .image {
+  opacity: 0.3;
+}
+
+.overlay-wrap:hover .middle {
+  opacity: 1;
+}
+
+.overlay-icon {
+  color: #ffffff; 
 }
 
 .portfolio-item h3 {
@@ -636,6 +677,15 @@ section .subscription-row {
   box-shadow: 0px 3px 0px 0px #3dc9b3; 
 }
 
+.box-hover {
+  transition: all 500ms ease-in-out;
+}
+
+.box-hover:hover, 
+.box-hover:focus { 
+  transform: translate(0, -15px);
+}
+
 .contacts-item .fas {
   font-size: 20px;
   color: #000000;
@@ -731,5 +781,5 @@ footer a:focus {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/*===========================  ===========================*/
+
 

@@ -16,12 +16,24 @@
       <nav class="main-navigation">
         <div class="container">
           <ul class="site-navigation">
-            <li><a href="#intro">Introduction <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#features">Features <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#responsive">Responsive Design <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#portfolio">Portfolio <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#team">Team <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#contact">Get in Touch <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a></li>
+            <li><a href="#intro" class="scroll" data-speed="2000">Introduction 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
+            <li><a href="#features" class="scroll" data-speed="2000">Features 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
+            <li><a href="#responsive" class="scroll" data-speed="2000">Responsive Design 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
+            <li><a href="#portfolio" class="scroll" data-speed="2000">Portfolio 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
+            <li><a href="#team" class="scroll" data-speed="2000">Team 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
+            <li><a href="#contact">Get in Touch 
+                <span class="nav-icon"><i class="fa fa-angle-right"></i></span></a>
+            </li>
           </ul>  
         </div>  
       </nav>
@@ -45,18 +57,22 @@
   </header>
 
   <main>
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="container">
         <div class="intro-row">
           <h2 class="arrow">A Creative Portfolio Template</h2>
-          <p>At Webstudio <a href="#">Frontend Days</a> we take a holistic approach to developing your online marketing strategy, which
-          includes your website design and marketing of your website to ensure you are discovered by new customers. We provide advice
-          on website strategy and design. We bring together professional user experience design Get in touch today for a free consultation to discuss your project. </p>
+          <p>At Webstudio <a href="#">Frontend Days</a> we take a holistic 
+            approach to developing your online marketing strategy, which 
+            includes your website design and marketing of your website to 
+            ensure you are discovered by new customers. We provide advice 
+            on website strategy and design. We bring together professional 
+            user experience design Get in touch today for a free consultation 
+            to discuss your project. </p>
         </div>
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <h2 class="arrow">Love what you do, and you'll do it well</h2>
         <ul class="features-list">
@@ -95,7 +111,7 @@
       </div>
     </section>
 
-    <section class="design">
+    <section class="design" id="responsive">
       <h2 class="visually-hidden">Responsive Design</h2>
       <div class="design-item iphone">
         <div class="pic"></div>
@@ -137,7 +153,9 @@
           <blockquote>
             <p>I got 99 Problems <span>but <em>design</em> 'aint one</span></p>
           </blockquote>
-          <a class="scroll-down" href="#portfolio"><i class="fa fa-chevron-down"></i></a>
+          <a class="scroll-down scroll" data-speed="2000" href="#portfolio">
+            <i class="fa fa-chevron-down"></i>
+          </a>
         </div>
       </div>  
     </section>
@@ -150,7 +168,12 @@
             <div class="swiper-slide">
               <ul class="portfolio-list">
                 <li class="portfolio-item">
-                  <img src="img/portfolio-01.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-01.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>                  
                   <h3 class="tiny">Creative Minds</h3>
                   <p>Our software engineers work hand-in-hand
                   with designers to develop cutting-edge
@@ -158,14 +181,24 @@
                   launched online.</p>
                 </li>
                 <li class="portfolio-item">
-                  <img src="img/portfolio-02.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-02.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>
                   <h3 class="tiny">Creative Hearts</h3>
                   <p>Working as one team, we ensure that products
                   we deliver to our clients are perfect from 
                   experience, design and technology perspectives.</p>
                 </li>
                 <li class="portfolio-item">
-                  <img src="img/portfolio-03.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-03.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>
                   <h3 class="tiny">Creative Ideas</h3>
                   <p>We bring together professional user
                   experience design and top-notch technology
@@ -176,7 +209,12 @@
             <div class="swiper-slide">
               <ul class="portfolio-list">
                 <li class="portfolio-item">
-                  <img src="img/portfolio-01.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-01.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>
                   <h3 class="tiny">Strategy</h3>
                   <p>Plan for success by defining your
                   goals and developing a strategy to 
@@ -184,7 +222,12 @@
                   complete.</p>
                 </li>
                 <li class="portfolio-item">
-                  <img src="img/portfolio-02.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-02.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>
                   <h3 class="tiny">Concept</h3>
                   <p>With a fully customised layout,
                   your project will be impressive 
@@ -192,7 +235,12 @@
                   launched online.</p>
                 </li>
                 <li class="portfolio-item">
-                  <img src="img/portfolio-03.jpg" width="360" height="210" alt="Portfolio Item">
+                  <div class="overlay-wrap">
+                    <img src="img/portfolio-03.jpg" class="image" width="360" height="210" alt="Portfolio Item">
+                    <div class="middle">
+                      <a href="#" class="overlay-icon"><i class="fa fa-search"></i><br>View More</a>
+                    </div>
+                  </div>
                   <h3 class="tiny">Launch</h3>
                   <p>Plan for success by defining your
                   goals and developing a strategy to 
@@ -211,7 +259,7 @@
       <a href="#" class="ignite-btn">Ignite Your Passion</a>
     </div>
 
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <h2 class="arrow">We're a team that adore what we do</h2>
         <div class="swiper-container">
@@ -337,22 +385,24 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contact">
       <div class="container">
-        <a class="scroll-up" href="#top"><i class="fa fa-chevron-up"></i></a>
+        <a class="scroll-up scroll" data-speed="2000" href="#top">
+          <i class="fa fa-chevron-up"></i>
+        </a>
         <h2 class="arrow">Drop us a line</h2>
         <div class="contacts-row">
-            <div class="contacts-item">
+            <div class="contacts-item box-hover">
               <i class="fas fa-map-marker-alt"></i>
               <h3 class="tiny">Address</h3>
               <p>Bohdana Khmel. St, 17/52, Kyiv</p>
             </div>
-            <div class="contacts-item">
+            <div class="contacts-item box-hover">
               <i class="fas fa-mobile-alt"></i>
               <h3 class="tiny">Phone</h3>
               <p>+38 093 554 28 **</p>
             </div>
-            <div class="contacts-item">
+            <div class="contacts-item box-hover">
               <i class="far fas fa-envelope"></i>
               <h3 class="tiny">Email</h3>
               <p>maksym4ak@gmail.com</p>
